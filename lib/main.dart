@@ -12,8 +12,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'test',// this title used in recent activity popup in phone
       home: Scaffold(
-        backgroundColor: Colors.grey,
-        body: Container(),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Container(
+            color: Colors.grey,
+            child: Text('Hi'),
+          ),
+        ),
       ),
     );
   }
