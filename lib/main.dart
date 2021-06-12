@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.max, // set column size of the screen to its chaild elements total height
             verticalDirection:VerticalDirection.down , // set direction of child elements
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,// set position of child elements
+            //mainAxisAlignment: MainAxisAlignment.spaceEvenly,// set position of child elements
             children: [
               Container(
                 color: Colors.grey,
@@ -30,6 +30,10 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.all(10.0),
                 padding: EdgeInsets.all(10.0),
                 child: Text('Hi'),
+              ),
+              // add space between container
+              SizedBox(
+                height: 10.0,
               ),
               Container(
                 color: Colors.blue,
