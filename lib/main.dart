@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.max, // set column size of the screen to its chaild elements total height
             verticalDirection:VerticalDirection.down , // set direction of child elements
-            mainAxisAlignment: MainAxisAlignment.end,// set position of child elements
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,// set position of child elements
             children: [
               Container(
                 color: Colors.grey,
@@ -36,6 +38,9 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.all(10.0),
                 padding: EdgeInsets.all(10.0),
                 child: Text('Hi'),
+              ),
+              Container(
+                width: double.infinity,
               ),
             ],
           ),
